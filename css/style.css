@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+}
+header{
+    padding-top: 30px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.5);
+    margin-bottom: 20px;
+}
+header nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+header .logo{
+    margin-bottom: 17px;
+}
+header nav a{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+header .login{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    background: #46a358;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+header .login:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/login_logo.svg");
+    margin-right: 4px;
+}
+header nav li:after{
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+header nav li:hover:after{
+    width: 100%;
+}
+main .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Cera Pro", sans-serif;
+    color: #3d3d3d;
+}
+main .banner .container {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+.left_container {
+    max-width: 557px;
+    margin-left: 40px;
+}
+.left_container h4 {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+.left_container h1 {
+    font-weight: 900;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 67px;
+    margin-bottom: 5px;
+}
+.left_container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    margin-bottom: 44px;
+}
+.planet_green {
+    color: #46a358;
+}
+.container img {
+    max-width: 507px;
+}
+main .shop_now {
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 11px 27px;
+    background: #46a358;
+    border-radius: 6px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.product .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+.product .left_side {
+    max-width: 310px;
+}
+.product .right_side {
+    max-width: 840px;
+}
+.product .product_sort {
+    display: flex;
+    justify-content: space-between;
+}
+.product .product_sort ul {
+    display: flex;
+    gap: 32px;
+}
+.product .product_sort ul li {
+    list-style-type: none;
+}
+.product_sort ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+}
+.product_sort ul li:after{
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+.product_sort li:hover:after {
+    width: 100%;
+}
+
+.main_product_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main_product_items article {
+    max-width: 250px;
+}
+.left_side h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin: 14px 0 12px 18px;
+}
+.left_side ul {
+    padding-left: 30px;
+    list-style-type: none;
+    margin-bottom: 350px;
+}
+.left_side ul a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 267%;
+    color: #3d3d3d;
+}
+.left_side a:hover {
+    color: #46a358;
+}
+.left_side {
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+.product_sort {
+    margin-bottom: 31px;
+}
+.main_product_items a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+.main_product_items span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+.main_product_items article {
+    margin-bottom: 48px;
+}
