@@ -286,8 +286,23 @@ main .shop_now {
 }
 
 .nav_bar ul li:hover {
-    color: white;
     background: #46a358;
+}
+
+.nav_bar ul li:hover a {
+    color: white;
+}
+
+.nav_bar li:last-of-type a:after {
+    content: "";
+    display: inline-block;
+    background-image: url("../images/nav_bar_arrow.svg");
+    width: 16px;
+    height: 16px;
+}
+
+.nav_bar li:last-of-type:hover a:after {
+    background-image: url("../images/nav_bar_white_arrow.svg");
 }
 
 .navigation_bar {
