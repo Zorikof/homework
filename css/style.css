@@ -200,7 +200,96 @@ main .shop_now {
 }
 
 .main_product_items article {
-    max-width: 250px;
+    max-width: 258px;
+    border-top: 2px solid transparent;
+    margin-bottom: 48px;
+    position: relative;
+}
+
+.main_product_items article .sale {
+    position: absolute;
+    top: 14px;
+    left:0px;
+    font-family: "Cera Pro", sans-serif;
+    background-color: #46a358;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    padding: 7px 8px;
+}
+
+.main_product_items ul {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    bottom: 42px;
+    width: 100%;
+    justify-content: center;
+    opacity: 0;
+}
+
+.product .right_side article:hover ul {
+    opacity: 1;
+}
+
+
+.main_product_items ul .first_li a:after {
+    content: "";
+    background-image: url("/images/shopping_cart_black.svg");
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 0;
+}
+
+.main_product_items ul .second_li a:after {
+    content: "";
+    background-image: url("/images/heart_black.svg");
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 0;
+}
+
+.main_product_items ul .third_li a:after {
+    content: "";
+    background-image: url("/images/search_black.svg");
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 0;
+}
+
+.main_product_items ul .first_li:hover a:after {
+    background-image: url("/images/shopping_cart_green.svg");
+}
+
+.main_product_items ul .second_li:hover a:after {
+    background-image: url("/images/heart_green.svg");
+}
+
+.main_product_items ul .third_li:hover a:after {
+    background-image: url("/images/search_green.svg");
+}
+
+.main_product_items a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+}
+
+.main_product_items span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+
+.product .right_side article:hover {
+    border-top: 2px solid #46a358;
 }
 
 .left_side h4 {
@@ -235,24 +324,6 @@ main .shop_now {
 
 .product_sort {
     margin-bottom: 31px;
-}
-
-.main_product_items a {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 100%;
-    color: #3d3d3d;
-}
-
-.main_product_items span {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 89%;
-    color: #46a358;
-}
-
-.main_product_items article {
-    margin-bottom: 48px;
 }
 
 .nav_bar {
