@@ -237,7 +237,7 @@ main .shop_now {
 
 .main_product_items ul .first_li a:after {
     content: "";
-    background-image: url("/images/shopping_cart_black.svg");
+    background-image: url("../images/shopping_cart_black.svg");
     display: block;
     width: 20px;
     height: 20px;
@@ -246,7 +246,7 @@ main .shop_now {
 
 .main_product_items ul .second_li a:after {
     content: "";
-    background-image: url("/images/heart_black.svg");
+    background-image: url("../images/heart_black.svg");
     display: block;
     width: 20px;
     height: 20px;
@@ -255,7 +255,7 @@ main .shop_now {
 
 .main_product_items ul .third_li a:after {
     content: "";
-    background-image: url("/images/search_black.svg");
+    background-image: url("../images/search_black.svg");
     display: block;
     width: 20px;
     height: 20px;
@@ -263,15 +263,15 @@ main .shop_now {
 }
 
 .main_product_items ul .first_li:hover a:after {
-    background-image: url("/images/shopping_cart_green.svg");
+    background-image: url("../images/shopping_cart_green.svg");
 }
 
 .main_product_items ul .second_li:hover a:after {
-    background-image: url("/images/heart_green.svg");
+    background-image: url("../images/heart_green.svg");
 }
 
 .main_product_items ul .third_li:hover a:after {
-    background-image: url("/images/search_green.svg");
+    background-image: url("../images/search_green.svg");
 }
 
 .main_product_items a {
