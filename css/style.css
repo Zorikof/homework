@@ -99,6 +99,7 @@ header .dropdown:hover .sub_menu {
     width: 7px;
     height: 10px;
     background-image: url("../images/right_arrow_menu.svg");
+    background-color: transparent;
     right: 10px;
     top: -16px
 }
