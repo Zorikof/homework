@@ -23,25 +23,109 @@ header .container {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgba(70, 163, 88, 0.5);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
-
-header nav ul {
+/*--------------------------------------------------*/
+/*main ul*/
+header .main_ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-header .logo {
-    margin-bottom: 17px;
-}
-
-header nav a {
+header .main_ul a {
     font-family: "Cera Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
+}
+
+header .main_ul li:after {
+    display: block;
+    width: 0;
+    content: "";
+    background-color: #46a358;
+    height: 3px;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+header .main_ul > li:hover:after {
+    width: 100%;
+}
+
+/*second_ul*/
+
+header .main_ul .dropdown {
+    position: relative;
+}
+
+header .main_ul .sub_menu {
+    position: absolute;
+    min-width: 188px;
+    padding-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 42px;
+    display: none;
+    transition: 0.7s;
+}
+
+header .main_ul .sub_menu li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #edf6ee;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    padding: 4px 14px;
+}
+
+header .dropdown:hover .sub_menu {
+    display: block;
+}
+
+/*sub_menu_2*/
+.main_ul .dropdown_2 {
+    position: relative;
+}
+
+.main_ul .dropdown_2:after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 10px;
+    background-image: url("../images/right_arrow_menu.svg");
+    right: 10px;
+    top: -16px
+}
+
+.main_ul .sub_menu_2 {
+    position: absolute;
+    min-width: 178px;
+    left: 178px;
+    display: none;
+    top: -108px;
+    padding-left: 12px;
+}
+
+header .dropdown_2:hover .sub_menu_2 {
+    display: block;
+}
+
+header .dropdown_2:hover:after {
+transform: rotate(180deg);
+}
+
+
+
+/*--------------------------------------------------*/
+
+header .logo {
+    margin-bottom: 17px;
 }
 
 header .login {
@@ -65,20 +149,6 @@ header .login:before {
     height: 20px;
     background-image: url("../images/login_logo.svg");
     margin-right: 4px;
-}
-
-header nav li:after {
-    display: block;
-    width: 0;
-    content: "";
-    background-color: #46a358;
-    height: 3px;
-    margin-top: 25px;
-    transition: 0.4s;
-}
-
-header nav li:hover:after {
-    width: 100%;
 }
 
 main .container {
