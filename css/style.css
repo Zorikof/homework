@@ -623,6 +623,7 @@ main .shop_now {
     position: relative;
     flex-direction: column;
     background-color: #fbfbfb;
+    justify-content: center;
 }
 
 .newsletters article:nth-child(1):after,
@@ -650,8 +651,8 @@ main .shop_now {
 
 .newsletters article:nth-child(4) {
     flex-grow: 1;
-    padding-left: 100px;
-    justify-content: center;
+    padding-left: 50px;
+
 }
 
 .newsletters article h4 {
@@ -676,16 +677,13 @@ main .shop_now {
     margin-bottom: 18px;
 }
 
-.newsletters article:nth-child(4) p {
-    margin-left: 25px;
-}
-
 .newsletters article:nth-child(4) form {
     margin-bottom: 17px;
 }
 
 .newsletters article form {
     display: flex;
+
 }
 
 .newsletters article .email_join input {
@@ -699,6 +697,7 @@ main .shop_now {
     color: #acacac;
     border-radius: 10px 0 0 10px;
     border: 0 solid #acacac;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .newsletters article .email_join button {
@@ -711,6 +710,8 @@ main .shop_now {
     background-color: #46a358;
     border-radius: 0 10px 10px 0;
     border: 0 solid #acacac;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .newsletters .green_line {
