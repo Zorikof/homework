@@ -214,6 +214,10 @@ main .shop_now {
     margin-bottom: 18px;
 }
 
+main .shop_now:hover {
+    animation: opacity_hover 1s infinite;
+}
+
 .product .container {
     display: flex;
     justify-content: space-between;
@@ -840,4 +844,45 @@ footer .under_footer h3 {
     font-size: 14px;
     line-height: 214%;
     color: #3d3d3d;
+}
+
+@keyframes opacity_hover {
+    0% {
+        opacity: 0;
+        scale: 1;
+    }
+    12% {
+        opacity: 0.25;
+        scale: 1.05;
+    }
+    25% {
+        opacity: 0.5;
+        scale: 1.1;
+    }
+    37% {
+        opacity: 0.75;
+        scale: 1.15;
+    }
+    50% {
+        opacity: 1;
+        scale: 1.2;
+        left: 200px;
+    }
+    62% {
+        opacity: 0.75;
+        scale: 1.15;
+    }
+    75% {
+        opacity: 0.5;
+        scale: 1.1;
+        left: 100px;
+    }
+    87% {
+        opacity: 0.25;
+        scale: 1.05;
+    }
+    100% {
+        opacity: 0;
+        scale: 1;
+    }
 }
