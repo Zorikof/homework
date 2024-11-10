@@ -2,20 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 a {
     display: inline-block;
 }
 
-header {
-    padding-top: 30px;
-}
-
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+header {
+    padding-top: 30px;
 }
 
 header .container {
@@ -57,7 +56,6 @@ header .main_ul > li:hover:after {
 }
 
 /*second_ul*/
-
 header .main_ul .dropdown {
     position: relative;
 }
@@ -102,7 +100,7 @@ header .dropdown:hover .sub_menu {
     background-image: url("../images/right_arrow_menu.svg");
     background-color: transparent;
     right: 10px;
-    top: -16px
+    top: -16px;
 }
 
 .main_ul .sub_menu_2 {
@@ -122,9 +120,7 @@ header .dropdown_2:hover:after {
     transform: rotate(180deg);
 }
 
-
 /*--------------------------------------------------*/
-
 header .logo {
     margin-bottom: 17px;
 }
@@ -155,7 +151,6 @@ header .login:before {
 main .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     font-family: "Cera Pro", sans-serif;
     color: #3d3d3d;
 }
@@ -220,7 +215,7 @@ main .shop_now:hover {
 
 .product .container {
     display: flex;
-    justify-content: space-between;
+    align-items: stretch;
     margin-top: 26px;
 }
 
@@ -458,15 +453,14 @@ main .shop_now:hover {
 .two_offers article {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: right;
     background: #fbfbfb;
     max-width: 586px;
     padding: 30px;
-    margin-bottom: 130px;
 }
-
-.two_offers article {
-    align-items: center;
-    text-align: right;
+.two_offers .container {
+    margin-bottom: 130px;
 }
 
 .two_offers article h3 {
@@ -912,6 +906,7 @@ footer .under_footer h3 {
     display: grid;
     animation: l3-0 1s infinite linear;
 }
+
 .loader::before,
 .loader::after {
     content: "";
@@ -922,34 +917,44 @@ footer .under_footer h3 {
     animation: inherit;
     animation-name: l3-1;
 }
+
 .loader::after {
     background: #F10C49;
     --s: 180deg;
 }
 
-@keyframes l3-0 {
-    0%, 20% { transform: rotate(0); }
-    100%    { transform: rotate(360deg); }
-}
-@keyframes l3-1 {
-    50% { transform: rotate(var(--s, 90deg)); }
-    100% { transform: rotate(0); }
-}
+/*@keyframes l3-0 {*/
+/*    0%, 20% {*/
+/*        transform: rotate(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(360deg);*/
+/*    }*/
+/*}*/
 
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
+/*@keyframes l3-1 {*/
+/*    50% {*/
+/*        transform: rotate(var(--s, 90deg));*/
+/*    }*/
+/*    100% {*/
+/*        transform: rotate(0);*/
+/*    }*/
+/*}*/
 
-.main-content {
-    opacity: 0;
-    animation: appear 0s 4s forwards; /* Появление через 4 секунды */
-}
+/*@keyframes fadeOut {*/
+/*    to {*/
+/*        opacity: 0;*/
+/*        visibility: hidden;*/
+/*    }*/
+/*}*/
 
-@keyframes appear {
-    to {
-        opacity: 1;
-    }
-}
+/*.main-content {*/
+/*    opacity: 0;*/
+/*    animation: appear 0s 4s forwards; !* Появление через 4 секунды *!*/
+/*}*/
+
+/*@keyframes appear {*/
+/*    to {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
