@@ -5,15 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Greenshop</title>
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
-<!--<div class="preloader">-->
-<!--    <div class="loader"></div>-->
-<!--</div>-->
+<div class="preloader">
+    <div class="loader"></div>
+</div>
 
 <header>
     <div class="container">
@@ -87,23 +91,27 @@
 
 <main>
     <section class="banner">
-        <div class="container">
-            <div class="left_container">
-                <h4>
-                    welcome to greenshop
-                </h4>
-                <h1>
-                    let's make a better <span class="planet_green">planet</span>
-                </h1>
-                <p>
-                    We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
-                    create an unique Urban Jungle. Order your favorite plants!
-                </p>
-                <a href="#" class="shop_now">Shop now</a>
+        <div class="container owl-carousel">
+            <div class="all_banner">
+                <div class="left_side_banner">
+                    <h4>
+                        welcome to greenshop
+                    </h4>
+                    <h1>
+                        let's make a better <span class="planet_green">planet</span>
+                    </h1>
+                    <p>
+                        We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to
+                        create an unique Urban Jungle. Order your favorite plants!
+                    </p>
+                    <a href="#" class="shop_now">Shop now</a>
+                </div>
+                <div class="right_side_banner">
+                    <a href="#">
+                        <img src="images/banner_image.svg" alt="banner">
+                    </a>
+                </div>
             </div>
-            <a href="#">
-                <img src="images/banner_image.svg" alt="banner">
-            </a>
         </div>
     </section>
     <section class="product">
@@ -683,6 +691,10 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

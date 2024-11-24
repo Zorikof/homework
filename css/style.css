@@ -179,34 +179,37 @@ main .banner .container {
   background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
   padding-top: 68px;
 }
+main .banner .container .all_banner {
+  display: flex;
+}
 main .banner .container img {
   max-width: 507px;
 }
-main .left_container {
+main .left_side_banner {
   max-width: 557px;
   margin-left: 40px;
 }
-main .left_container h4 {
+main .left_side_banner h4 {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-main .left_container h1 {
+main .left_side_banner h1 {
   font-weight: 900;
   line-height: 100%;
   text-transform: uppercase;
   font-size: 67px;
   margin-bottom: 5px;
 }
-main .left_container p {
+main .left_side_banner p {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   color: #727272;
   margin-bottom: 44px;
 }
-main .left_container .planet_green {
+main .left_side_banner .planet_green {
   color: #46a358;
 }
 main .shop_now {
@@ -928,36 +931,37 @@ footer .under_footer h3 {
   --s: 180deg;
 }
 
-/*@keyframes l3-0 {*/
-/*    0%, 20% {*/
-/*        transform: rotate(0);*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(360deg);*/
-/*    }*/
-/*}*/
-/*@keyframes l3-1 {*/
-/*    50% {*/
-/*        transform: rotate(var(--s, 90deg));*/
-/*    }*/
-/*    100% {*/
-/*        transform: rotate(0);*/
-/*    }*/
-/*}*/
-/*@keyframes fadeOut {*/
-/*    to {*/
-/*        opacity: 0;*/
-/*        visibility: hidden;*/
-/*    }*/
-/*}*/
-/*.main-content {*/
-/*    opacity: 0;*/
-/*    animation: appear 0s 4s forwards; !* Появление через 4 секунды *!*/
-/*}*/
-/*@keyframes appear {*/
-/*    to {*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
+@keyframes l3-0 {
+  0%, 20% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes l3-1 {
+  50% {
+    transform: rotate(var(--s, 90deg));
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.main-content {
+  opacity: 0;
+  animation: appear 0s 4s forwards; /* Появление через 4 секунды */
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

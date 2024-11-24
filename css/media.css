@@ -103,13 +103,13 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .left_container {
+    .all_banner {
         margin-left: 10px;
     }
-    .left_container h4 {
+    .all_banner h4 {
         font-size: 12px;
     }
-    .left_container h1 {
+    .all_banner h1 {
         font-size: 35px;
     }
     .banner .container img {
