@@ -25,7 +25,51 @@ header .container {
   border-bottom: 1px solid rgba(70, 163, 88, 0.5);
   margin-bottom: 12px;
 }
+header .container a {
+  margin-bottom: 12px;
+}
 
+header .login_ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+header .login_ul li {
+  display: flex;
+  align-items: center;
+}
+header .login_ul .search_logo a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+header .login_ul .search_logo a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/search_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .login_ul .shopping_logo a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+header .login_ul .shopping_logo a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/shopping_cart_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 header .main_ul {
   display: flex;
   gap: 50px;
@@ -44,7 +88,7 @@ header .main_ul li:after {
   content: "";
   background-color: #46a358;
   height: 3px;
-  margin-top: 25px;
+  margin-top: 12px;
   transition: 0.4s;
 }
 header .main_ul > li:hover:after {
@@ -104,9 +148,6 @@ header .main_ul .sub_menu_2 {
   top: -108px;
   padding-left: 12px;
 }
-header .logo {
-  margin-bottom: 17px;
-}
 header .login {
   font-family: "Cera Pro", sans-serif;
   font-weight: 500;
@@ -118,7 +159,6 @@ header .login {
   border-radius: 6px;
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
 }
 header .login:before {
   content: "";
@@ -137,6 +177,7 @@ main .container {
 }
 main .banner .container {
   background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+  padding-top: 68px;
 }
 main .banner .container img {
   max-width: 507px;
@@ -332,7 +373,15 @@ main .product .right_side .main_product_items ul {
 .left_side ul {
   padding-left: 30px;
   list-style-type: none;
-  margin-bottom: 350px;
+}
+
+.left_side div {
+  margin-bottom: 100px;
+}
+
+.left_side ul li {
+  display: flex;
+  justify-content: space-between;
 }
 
 .left_side ul a {
@@ -341,6 +390,7 @@ main .product .right_side .main_product_items ul {
   font-size: 15px;
   line-height: 267%;
   color: #3d3d3d;
+  margin-right: 24px;
 }
 
 .left_side a:hover {
@@ -652,7 +702,7 @@ main .product .right_side .main_product_items ul {
   color: #acacac;
   border-radius: 10px 0 0 10px;
   border: 0 solid #acacac;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .newsletters article .email_join button {
@@ -665,7 +715,7 @@ main .product .right_side .main_product_items ul {
   background-color: #46a358;
   border-radius: 0 10px 10px 0;
   border: 0 solid #acacac;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .newsletters .green_line {

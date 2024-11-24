@@ -24,9 +24,17 @@
     footer .articles > div:nth-child(1), footer .articles > div:nth-child(2), footer .articles > div:nth-child(3) {
         margin: 33px 90px 27px 25px;
     }
+
+    main .product .right_side .main_product_items {
+        justify-content: space-around;
+    }
 }
 
 @media only screen and (max-width: 834px) {
+
+    main .product .left_side {
+        max-width: 230px;
+    }
     header .main_ul {
         gap: 25px;
     }
@@ -55,6 +63,9 @@
     }
     .left_side li a  {
         margin-right: 20px;
+    }
+    main .product .right_side .main_product_items article {
+        max-width: 220px;
     }
 }
 
@@ -86,13 +97,7 @@
 
 @media only screen and (max-width: 440px) {
     header .main_ul {
-        gap: 10px;
-    }
-    header .container ul {
-        margin-left: 10px;
-    }
-    header .main_ul a {
-       font-size: 16px;
+        display: none;
     }
     .banner .container {
         display: flex;
@@ -157,22 +162,25 @@
     footer .articles ul {
         margin-bottom: 0;
     }
+    main .banner .container img {
+        max-width: 440px;
+    }
 }
 
 @media only screen and (max-width: 430px) {
-    .banner .container img {
+    main .banner .container img {
         max-width: 430px;
     }
 }
 
 @media only screen and (max-width: 428px) {
-    .banner .container img {
+    main .banner .container img {
         max-width: 428px;
     }
 }
 
 @media only screen and (max-width: 414px) {
-    .banner .container img {
+    main .banner .container img {
         max-width: 414px;
     }
     .newsletters .container .articles > article:nth-child(-n+3) {
@@ -186,7 +194,7 @@
 
 
 @media only screen and (max-width: 390px) {
-    .banner .container img {
+    main .banner .container img {
         max-width: 390px;
     }
     .newsletters .container .articles > article:nth-child(-n+3) {
@@ -214,7 +222,7 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .banner .container img {
+    main .banner .container img {
         max-width: 375px;
     }
     .two_offers article {
@@ -233,6 +241,10 @@
 }
 
 @media only screen and (max-width: 360px) {
+
+    main .banner .container img {
+        max-width: 360px;
+    }
 
     .two_offers article {
         max-width: 360px;
